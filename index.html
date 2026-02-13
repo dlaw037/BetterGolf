@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Better Golf | Train Better. Play Better.</title>
+  <meta name="description" content="Better Golf is a high-performance training facility built for dedicated golfers. Explore membership options, facility details, and TrackMan-powered training." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Oswald:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <audio id="bg-audio" loop preload="auto" autoplay playsinline>
+    <source src="./assets/your-ways-better.mp3" type="audio/mpeg" />
+  </audio>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Better Golf home">
+        <img src="./better-golf-logo-horizontal.png" alt="Better Golf logo" />
+      </a>
+
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#facility">Facility</a>
+        <a href="#membership">Membership</a>
+        <a href="#updates">Stay Informed</a>
+        <a href="#videos">Videos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+        <source src="./pebble-beach-v1.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="reveal" style="--delay: 40ms;">
+          <p class="eyebrow">indoor golf elevated</p>
+          <h1>Train Better.<br />Play Better.</h1>
+          <ul class="hero-points" aria-label="Facility highlights">
+            <li>Powered by TrackMan</li>
+            <li>24/7 Access</li>
+            <li>Area's Largest Indoor Putting Green</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="facility">
+      <div class="container facility-shell">
+        <figure class="facility-media reveal" style="--delay: 40ms;" aria-hidden="true">
+          <img class="facility-media-main" src="./assets/facility-trackman-bg.jpg" alt="" />
+        </figure>
+
+        <div class="facility-content">
+          <p class="eyebrow reveal">Our Facility</p>
+          <h2 class="section-heading reveal" style="--delay: 70ms;">The Quad Cities Premiere Training Facility</h2>
+          <p class="section-copy reveal" style="--delay: 100ms;">
+            Built for serious development with premium simulator technology, advanced analysis tools, and elite short-game space.
+          </p>
+
+          <ul class="facility-highlights" aria-label="Facility highlights">
+            <li class="facility-highlight reveal" style="--delay: 130ms;">
+              <h3>3 TrackMan Simulators</h3>
+              <p>2 TrackMan iO's and 1 TrackMan 4 setup for complete indoor training.</p>
+            </li>
+            <li class="facility-highlight reveal" style="--delay: 170ms;">
+              <h3>Multi Monitor Data Displays</h3>
+              <p>Clear real-time numbers across multiple screens to speed up adjustments.</p>
+            </li>
+            <li class="facility-highlight reveal" style="--delay: 210ms;">
+              <h3>TrackMan Camera + 3D Motion Analysis</h3>
+              <p>Detailed swing motion capture for precise feedback and faster improvement.</p>
+            </li>
+            <li class="facility-highlight reveal" style="--delay: 250ms;">
+              <h3>2,000 sq ft Indoor Putting Green</h3>
+              <p>The area's largest indoor putting surface for true pace control and repetition.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="membership" id="membership">
+      <div class="container">
+        <p class="eyebrow reveal">Membership Tier</p>
+        <h2 class="section-heading reveal" style="--delay: 40ms;">Membership Levels</h2>
+        <p class="section-copy reveal" style="--delay: 90ms;">
+          Dedicated openings for dedicated golfers.
+        </p>
+
+        <div class="membership-table-wrap reveal" style="--delay: 120ms;">
+          <table class="membership-table" aria-label="Membership levels comparison">
+            <thead>
+              <tr>
+                <th scope="col" class="feature-col"></th>
+                <th scope="col">Junior<span>17 and under</span></th>
+                <th scope="col">Standard</th>
+                <th scope="col" class="is-featured">Performance</th>
+                <th scope="col">Family<span>Immediate household</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="feature-col">Monthly Fee</th>
+                <td>$149/month</td>
+                <td>$179/month</td>
+                <td class="is-featured">$279/month</td>
+                <td>$379/month</td>
+              </tr>
+              <tr>
+                <th scope="row" class="feature-col">Facility Access</th>
+                <td>8am - 8:30pm</td>
+                <td>Weekdays before 4pm and weekends</td>
+                <td class="is-featured">24/7</td>
+                <td>24/7</td>
+              </tr>
+              <tr>
+                <th scope="row" class="feature-col">Simulator Hours</th>
+                <td>8 hours</td>
+                <td>10 hours</td>
+                <td class="is-featured">16 hours</td>
+                <td>20 hours</td>
+              </tr>
+              <tr>
+                <th scope="row" class="feature-col">Booking Window</th>
+                <td>4 days</td>
+                <td>4 days</td>
+                <td class="is-featured">7 days</td>
+                <td>7 days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="membership-note reveal" style="--delay: 150ms;">
+          All memberships have a $50 enrollment fee. Download the full terms and rates sheet.
+        </p>
+
+        <div class="membership-cta reveal" style="--delay: 180ms;">
+          <a href="#updates" class="membership-btn">Join Now</a>
+          <a href="#updates" class="membership-btn">TrackMan Login</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="updates">
+      <figure class="updates-golfer reveal" style="--delay: 50ms;" aria-hidden="true">
+        <img src="./assets/hero-golfer.png" alt="" />
+      </figure>
+      <div class="container">
+        <p class="eyebrow reveal">Stay Informed</p>
+        <h2 class="section-heading reveal" style="--delay: 40ms;">Get Opening Updates And Offers</h2>
+        <p class="section-copy reveal" style="--delay: 90ms;">
+          Join the Better Golf interest list to receive launch timing, membership updates, and invitations to special events.
+        </p>
+
+        <div class="signup-shell">
+          <form class="signup-box reveal" style="--delay: 120ms;" action="#" method="post">
+            <div class="field-row">
+              <div>
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" required />
+              </div>
+              <div>
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" required />
+              </div>
+            </div>
+
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="goal">Primary Goal</label>
+            <select id="goal" name="goal" required>
+              <option value="">Select one</option>
+              <option>Lower scores</option>
+              <option>Increase distance</option>
+              <option>Improve consistency</option>
+              <option>Off-season training</option>
+            </select>
+
+            <label for="message">Anything Else We Should Know?</label>
+            <textarea id="message" name="message" placeholder="Share your current handicap, training goals, or preferred membership timeline."></textarea>
+
+            <button class="btn btn-primary" type="submit">Send Request</button>
+          </form>
+
+          <aside class="signup-benefits reveal" style="--delay: 170ms;" aria-label="Member updates benefits">
+            <div class="benefit-item">
+              <h4>Early Access Announcements</h4>
+              <p>Be first to hear about launch dates, member previews, and availability updates.</p>
+            </div>
+            <div class="benefit-item">
+              <h4>Tier Availability Alerts</h4>
+              <p>Get notified when preferred membership tiers open or expand.</p>
+            </div>
+            <div class="benefit-item">
+              <h4>TrackMan Training Content</h4>
+              <p>Receive practical resources on how to train smarter using measurable performance data.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="videos" id="videos">
+      <div class="container">
+        <p class="eyebrow reveal">TrackMan Videos</p>
+        <h2 class="section-heading reveal" style="--delay: 40ms;">See The Technology In Action</h2>
+        <p class="section-copy reveal" style="--delay: 90ms;">
+          A few examples of the shot diagnostics and practice concepts TrackMan unlocks inside each Better Golf session.
+        </p>
+
+        <div class="video-grid">
+          <article class="video-card reveal" style="--delay: 120ms;">
+            <div class="video-wrap">
+              <video controls preload="metadata" playsinline>
+                <source src="./assets/VG3_Trailer_4K.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-body">
+              <h3>Virtual Golf 3 Trailer</h3>
+              <p>Experience TrackMan Virtual Golf 3 with immersive course environments and game modes.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" style="--delay: 170ms;">
+            <div class="video-wrap">
+              <video controls preload="metadata" playsinline>
+                <source src="./assets/BullsEye.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-body">
+              <h3>Bullseye Challenge</h3>
+              <p>Take aim in TrackMan Bullseye and test precision across dynamic target environments.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" style="--delay: 220ms;">
+            <div class="video-wrap">
+              <video controls preload="metadata" playsinline>
+                <source src="./assets/TrackMan-iO.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-body">
+              <h3>TrackMan iO</h3>
+              <p>Discover the TrackMan iO platform built for precision indoor performance and training analytics.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">
+        <img src="./better-golf-logo.png" alt="Better Golf logo mark" />
+        Better Golf
+      </p>
+      <p class="trackman-badge">
+        <img src="./assets/trackman-powered-by.png" alt="Powered by TrackMan" />
+      </p>
+      <small>© <span id="year"></span> Better Golf. Train Better. Play Better.</small>
+    </div>
+  </footer>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>
