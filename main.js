@@ -57,3 +57,27 @@
         startAudio();
       }, 750);
     }
+
+    document.querySelectorAll('video[data-thumb-start]').forEach((video) => {
+      const startAt = Number(video.getAttribute('data-thumb-start'));
+      if (!Number.isFinite(startAt) || startAt < 0) return;
+
+      const seekToThumbFrame = () => {
+        const canSeek = Number.isFinite(video.duration) && video.duration > startAt;
+        if (!canSeek) return;
+
+        const applyFrame = () => {
+          video.pause();
+          video.removeEventListener('seeked', applyFrame);
+        };
+
+        video.addEventListener('seeked', applyFrame, { once: true });
+        video.currentTime = startAt;
+      };
+
+      if (video.readyState >= 1) {
+        seekToThumbFrame();
+      } else {
+        video.addEventListener('loadedmetadata', seekToThumbFrame, { once: true });
+      }
+    });
